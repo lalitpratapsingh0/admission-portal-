@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Portal - University of Excellence</title>
+    <link rel="stylesheet" href="style.css">
+  \
+</head>
+<body>
+    <div class="bg-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">👶🏻 IIT Dholakpur</div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#apply">Apply</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                </ul>
+                <label class="switch">
+                    <input checked="true" id="checkbox" type="checkbox" />
+                    <span class="slider">
+                        <div class="star star_1"></div>
+                        <div class="star star_2"></div>
+                        <div class="star star_3"></div>
+                        <svg viewBox="0 0 16 16" class="cloud_1 cloud">
+                            <path transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#fff" d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"></path>
+                        </svg>
+                    </span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero" id="home">
+            <h1>Welcome to Admissions of IIT Dholakpur 2025</h1>
+            <p>Shape your future with us. Begin your journey today. </p>
+        </section>
+
+        <div class="cards-grid" id="programs">
+            <div class="card">
+                <div class="card-icon">💼</div>
+                <h3>Undergraduate Programs</h3>
+                <p>Explore our diverse range of bachelor's degree programs designed to launch your career in the right direction.</p>
+                <ul style="color: #555; margin: 1rem 0; line-height: 1.8;">
+                    <li>Engineering & Technology</li>
+                    <li>Bachelors of Computer Application</li>
+                    <li>Business & Management</li>
+                    <li>Arts & Humanities</li>
+                    <li>Sciences</li>
+                </ul>
+                <button class="card-btn" onclick="scrollToForm()">Apply Now</button>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🎯</div>
+                <h3>Graduate Programs</h3>
+                <p>Advance your expertise with our master's and doctoral programs taught by world-class faculty.</p>
+                <ul style="color: #555; margin: 1rem 0; line-height: 1.8;">
+                    <li>Master of Computer Application</li>
+                    <li>MBA Programs</li>
+                    <li>Ph.D. Programs</li>
+                    <li>Professional Certifications</li>
+                </ul>
+                <button class="card-btn" onclick="scrollToForm()">Apply Now</button>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🌍</div>
+                <h3>International Students</h3>
+                <p>Join our diverse global community. We welcome students from over 100 countries worldwide.</p>
+                <ul style="color: #555; margin: 1rem 0; line-height: 1.8;">
+                    <li>Visa Assistance</li>
+                    <li>Scholarships Available</li>
+                    <li>English Language Support</li>
+                    <li>Cultural Integration</li>
+                </ul>
+                <button class="card-btn" onclick="scrollToForm()">Apply Now</button>
+            </div>
+        </div>
+
+        <section class="form-container" id="apply">
+            <h2>📝 Application Form</h2>
+            <form id="admissionForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth *</label>
+                        <input type="date" id="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nationality">Nationality *</label>
+                        <input type="text" id="nationality" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="program">Program Level *</label>
+                        <select id="program" required>
+                            <option value="">Select Program</option>
+                            <option value="undergraduate">Undergraduate</option>
+                            <option value="graduate">Graduate</option>
+                            <option value="phd">Ph.D.</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="field">Field of Study *</label>
+                        <select id="field" required>
+                            <option value="">Select Field</option>
+                            <option value="law">Law</option>
+                            <option value="BCA">BCA</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="business">Business</option>
+                            <option value="arts">Arts & Humanities</option>
+                            <option value="sciences">Sciences</option>
+                            <option value="medicine">Medicine</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="address">Address *</label>
+                        <textarea id="address" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="statement">Personal Statement (Why do you want to join us?)</label>
+                        <textarea id="statement" rows="5" placeholder="Tell us about your goals and aspirations..."></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Submit Application</span>
+                </button>
+            </form>
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p style="margin-top: 1rem; color: #667eea;">Processing your application...</p>
+            </div>
+        </section>
+
+        <section class="timeline" id="timeline">
+            <h2>⏰ Admission Timeline </h2>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>December 1 - January 15</h3>
+                    <p>Early Application Period - Submit your application and get priority consideration for scholarships.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>January 16 - March 31</h3>
+                    <p>Regular Application Period - Standard application deadline for all programs.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>April 1 - April 30</h3>
+                    <p>Application Review - Our admissions committee reviews all applications.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>May 1 - May 15</h3>
+                    <p>Admission Decisions - Acceptance letters and scholarship notifications sent.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>June 1</h3>
+                    <p>Enrollment Deadline - Confirm your admission and complete enrollment.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>September 1</h3>
+                    <p>Classes Begin - Welcome to your new academic journey!</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 University of Excellence. All rights reserved.</p>
+        <p>Contact: lpslalit3436@gmail.com | +91 9528034775</p>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
